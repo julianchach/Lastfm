@@ -5,7 +5,7 @@ import com.example.fmmusic.view.ArtistServiceActivity
 import dagger.Component
 import javax.inject.Singleton
 
-@Component(modules = [AppModule::class])
+@Component(modules = [AppModule::class, DataProvides::class])
 @Singleton
 interface AppComponent {
     fun inject(context: Context)
