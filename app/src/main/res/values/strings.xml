@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FmMusic</string>
+    <string name="listeners_title">Listeners:</string>
 </resources>
