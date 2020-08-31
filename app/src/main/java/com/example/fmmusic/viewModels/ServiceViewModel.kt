@@ -22,7 +22,7 @@ class ServiceViewModel(var dbRepository: DbRepository, var repository: Repositor
         return responseArtistApi
     }
 
-    fun dbArtistsResponse(): MutableLiveData<List<Artist>> {
+    fun dbArtistsResponse(): MutableLiveData<List<Artist>>? {
         return responseArtistDb
     }
 
@@ -90,5 +90,6 @@ class ServiceViewModel(var dbRepository: DbRepository, var repository: Repositor
                 {result -> responseArtistDb.setValue(result) },
                 {responseArtistDb.setValue(null)}
             ))
+
     }
 }
